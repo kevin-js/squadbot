@@ -1,3 +1,5 @@
+"use strict";
+
 // Node modules
 var restify = require('restify');
 var builder = require('botbuilder');
@@ -9,11 +11,10 @@ var index = 0;
 // endpoints
 var bot = new builder.BotConnectorBot({appId: 'Squad', appSecret: '91606fa3e08e456a9b22c244c2589cbf'});
 bot.add('/', function(session) {
-	setTimeout(function() {
+	if (Math.random() > 0.94) {
 		session.send(phrases[index % phrases.length]);
 		index++;
-	}, 10000);
-	
+	}
 });
 
 // run server
