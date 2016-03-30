@@ -1,0 +1,26 @@
+{
+  "name": "squadbot",
+  "version": "1.0.0",
+  "description": "squaaaaaad",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgeezy93/squadbot.git"
+  },
+  "keywords": [
+    "squad"
+  ],
+  "author": "squad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgeezy93/squadbot/issues"
+  },
+  "homepage": "https://github.com/kgeezy93/squadbot#readme",
+  "dependencies": {
+    "botbuilder": "^0.6.0",
+    "restify": "^4.0.4"
+  }
+}
